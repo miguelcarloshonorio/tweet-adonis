@@ -17,6 +17,8 @@
 const Route = use('Route');
 
 
+//Rota default Home
+Route.get('/', 'HomeController.index');
 Route.post('register', 'AuthController.register');
 Route.post('authenticate', 'AuthController.authenticate');
 
