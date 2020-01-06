@@ -10,4 +10,4 @@ class Tweet extends Model {
   }
 }
 
-module.exports = Tweet
+module.exports = Tweet;

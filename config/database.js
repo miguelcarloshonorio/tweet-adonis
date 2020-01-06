@@ -1,13 +1,7 @@
-'use strict'
+'use strict';
 
-/** @type {import('@adonisjs/framework/src/Env')} */
 const Env = use('Env');
-
-/** @type {import('@adonisjs/ignitor/src/Helpers')} */
 const Helpers = use('Helpers');
-
-const Url = require('url-parse');
-const DATABASE_URL = new Url(Env.get('DATABASE_URL'));
 
 module.exports = {
   /*
@@ -19,20 +13,14 @@ module.exports = {
   | interacting with SQL databases.
   |
   */
- connection: {
-  host: Env.get('DB_HOST', DATABASE_URL.host),
-  port: Env.get('DB_PORT', ''),
-  user: Env.get('DB_USER', DATABASE_URL.username),
-  password: Env.get('DB_PASSWORD', DATABASE_URL.password),
-  database: Env.get('DB_DATABASE', DATABASE_URL.pathname.substr(1))
-} ,
+  connection: Env.get('DB_CONNECTION', 'sqlite'),
 
   /*
   |--------------------------------------------------------------------------
   | Sqlite
   |--------------------------------------------------------------------------
   |
-  | Sqlite is a flat file database and can be a good choice for a development
+  | Sqlite is a flat file database and can be good choice under development
   | environment.
   |
   | npm i --save sqlite3
@@ -43,8 +31,7 @@ module.exports = {
     connection: {
       filename: Helpers.databasePath(`${Env.get('DB_DATABASE', 'development')}.sqlite`)
     },
-    useNullAsDefault: true,
-    debug: Env.get('DB_DEBUG', false)
+    useNullAsDefault: true
   },
 
   /*
@@ -65,8 +52,7 @@ module.exports = {
       user: Env.get('DB_USER', 'root'),
       password: Env.get('DB_PASSWORD', ''),
       database: Env.get('DB_DATABASE', 'adonis')
-    },
-    debug: Env.get('DB_DEBUG', false)
+    }
   },
 
   /*
@@ -87,7 +73,6 @@ module.exports = {
       user: Env.get('DB_USER', 'root'),
       password: Env.get('DB_PASSWORD', ''),
       database: Env.get('DB_DATABASE', 'adonis')
-    },
-    debug: Env.get('DB_DEBUG', false)
+    }
   }
 }
