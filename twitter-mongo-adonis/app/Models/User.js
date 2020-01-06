@@ -32,7 +32,11 @@ class User extends Model {
    * @return {Object}
    */
   tokens () {
-    return this.hasMany('App/Models/Token')
+    return this.hasMany('App/Models/Token');
+  }
+
+  tweets () {
+    return this.hasMany('App/Models/Tweets');
   }
 }
 
