@@ -1,28 +1,50 @@
-# Adonis API application
+<h1 align="center">Welcome to tweet-adonis-node 👋</h1>
+<p>
+  <img alt="Version" src="https://img.shields.io/badge/version-4.1.0-blue.svg?cacheSeconds=2592000" />
+  <a href="#" target="_blank">
+    <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
+  </a>
+  <a href="https://twitter.com/micajeho" target="_blank">
+    <img alt="Twitter: micajeho" src="https://img.shields.io/twitter/follow/micajeho.svg?style=social" />
+  </a>
+</p>
 
-This is the boilerplate for creating an API server in AdonisJs, it comes pre-configured with.
+> Projeto Tweet com Adonis e NodeJs
 
-1. Bodyparser
-2. Authentication
-3. CORS
-4. Lucid ORM
-5. Migrations and seeds
+### 🏠 [Homepage](https://tweet-micajeho-backend.herokuapp.com/)
 
-## Setup
+### ✨ [Demo](https://tweet-micajeho-backend.herokuapp.com/)
 
-Use the adonis command to install the blueprint
+## Install
 
-```bash
-adonis new yardstick --api-only
+```sh
+npm install
 ```
 
-or manually clone the repo and then run `npm install`.
+## Usage
 
-
-### Migrations
-
-Run the following command to run startup migrations.
-
-```js
-adonis migration:run
+```sh
+adonis serve --dev
 ```
+
+## Run tests
+
+```sh
+npm run test
+```
+
+## Author
+
+👤 **Miguel Carlos Honorio**
+
+* Website: prosulti.com.br
+* Twitter: [@micajeho](https://twitter.com/micajeho)
+* Github: [@miguelcarloshonorio](https://github.com/miguelcarloshonorio)
+* LinkedIn: [@micajeho](https://linkedin.com/in/micajeho)
+
+## Show your support
+
+Give a ⭐️ if this project helped you!
+
+***
+_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
