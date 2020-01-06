@@ -1,4 +1,4 @@
-<h1 align="center">Welcome to tweet-adonis-node 👋</h1>
+<h1 align="center">Bem vindo ao tweet-adonis-node 👋</h1>
 <p>
   <img alt="Version" src="https://img.shields.io/badge/version-4.1.0-blue.svg?cacheSeconds=2592000" />
   <a href="#" target="_blank">
@@ -10,6 +10,7 @@
 </p>
 
 > Projeto Tweet com Adonis e NodeJs
+> Requer o Adonis Instalado (neste projeto utilizei o adonis-cli)
 
 ### 🏠 [Homepage](https://tweet-micajeho-backend.herokuapp.com/)
 
